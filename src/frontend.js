@@ -2,7 +2,7 @@
 document.addEventListener( 'DOMContentLoaded', initDynamicDate );
 
 function initDynamicDate() {
-	const txtElements = document.querySelectorAll( '.wp-block-create-block-timer-block' );
+	const txtElements = document.querySelectorAll( '.wp-block-create-block-countdown-settimer-block' );
 
     txtElements.forEach( ( txtElement ) => {
 		new CountDown( txtElement);

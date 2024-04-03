@@ -12,7 +12,7 @@
 
 <?php $args .= ( $textAlign )? " p-text-align-$textAlign" : ''; ?>
 
-<?php $style .= ( $maxWidth ) ? ' max-width:' . $maxWidth . 'px;' : ''; ?>
+<?php $style .= ( $maxWidth ) ? ' width:' . $maxWidth . 'px;' : ''; ?>
 
 <?php $styleinner =''; ?>
 <?php $styleinner .= ( $gridGap ) ? ' gap:' . $gridGap . 'px;' : ''; ?>

@@ -32,7 +32,7 @@ export default function Edit( props ) {
 	
 	let cssstyle= {}
 	cssstyle = ( gridGap ) ? {...cssstyle, gap: gridGap  }   : {...cssstyle}
-	cssstyle = ( maxWidth ) ? {...cssstyle, maxWidth: maxWidth  }   : {...cssstyle}
+	cssstyle = ( maxWidth ) ? {...cssstyle, width: maxWidth  }   : {...cssstyle}
 
 	const TEMPLATE = [
 		[
@@ -238,6 +238,7 @@ useEffect(()=>{
 			<div
 				{ ...useBlockProps( {
 					className: `p-text-align-${ textAlign }`,
+					style: {width: maxWidth }
 					
 				} ) }
 			>

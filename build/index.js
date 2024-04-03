@@ -67,7 +67,7 @@ function Edit(props) {
   };
   cssstyle = maxWidth ? {
     ...cssstyle,
-    maxWidth: maxWidth
+    width: maxWidth
   } : {
     ...cssstyle
   };
@@ -237,7 +237,10 @@ function Edit(props) {
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
-      className: `p-text-align-${textAlign}`
+      className: `p-text-align-${textAlign}`,
+      style: {
+        width: maxWidth
+      }
     })
   }, timeleft && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, timeUpString), !timeleft && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "countdown",
