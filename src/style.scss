@@ -1,0 +1,34 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-countdown-settimer-block {
+	.message {
+    display: none;
+  }
+
+  .countdown {
+    &>.block-editor-inner-blocks>.block-editor-block-list__layout, &.save {
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  gap: 10px; 
+
+  li {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    justify-content: space-between;  
+    padding: 10px; 
+    background: #eee;
+    border-radius: 10px;
+    
+   
+  } }
+  
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/countdown-settimer-block",
+  "version": "0.1.0",
+  "title": "Countdown Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "A block to countdown to a date or time.",
+  "keywords": [
+    "engc"
+  ],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "dateValue": {
+      "type": "string",
+      "default": ""
+    },
+    "timeUpString": {
+      "type": "string",
+      "default": "Time is up!"
+    },
+    "countbackgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "countColor": {
+      "type": "string",
+      "default": ""
+    },
+    "gridGap": {
+      "type": "number",
+      "default": 10
+    },
+    "digitLabelGap": {
+      "type": "number",
+      "default": 0
+    },
+    "maxWidth": {
+      "type": "number",
+      "default": 600
+    },
+    "customToggle": {
+      "type": "boolean",
+      "default": true
+    },
+    "hourCustom": {
+      "type": "number",
+      "default": 20
+    },
+    "minuteCustom": {
+      "type": "number",
+      "default": 20
+    },
+    "secondCustom": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "providesContext": {
+    "create-block/timer-block": "dateValue",
+    "create-block/timer-backgroundColor": "countbackgroundColor",
+    "create-block/timer-color": "countColor",
+    "create-block/timer-digitLabelGap": "digitLabelGap"
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "background": true,
+      "gradients": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "textdomain": "countdown-settimer-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./frontend.js"
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/timer-day-block",
+  "version": "0.1.0",
+  "title": "Count Down Item Block",
+  "category": "engc-blocks",
+  "icon": "text-page",
+  "parent": [
+    "create-block/timer-block"
+  ],
+  "description": "day",
+  "keywords": [
+    "engc"
+  ],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "dateValue": {
+      "type": "string",
+      "default": ""
+    },
+    "countdownselect": {
+      "type": "string",
+      "default": "seconds"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "background": true,
+      "gradients": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true
+    }
+  },
+  "textdomain": "engc-block",
+  "editorScript": "file:./index.js",
+  "viewScript": "",
+  "script": "",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "usesContext": [
+    "create-block/timer-block",
+    "create-block/timer-backgroundColor",
+    "create-block/timer-color",
+    "create-block/timer-digitLabelGap"
+  ]
+}
