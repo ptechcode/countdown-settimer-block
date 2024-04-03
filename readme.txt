@@ -20,7 +20,7 @@ Gutenberg count down to a date or duration.
  - No coding skill required
  - Fully Customizable
  - Fully Responsive
- - Multiple count up timer on same page
+ - Multiple count down timer on same page
 
 
 == Installation ==
